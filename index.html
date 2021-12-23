@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="text">
+    <h1 class="head">TEXT-TO-SPEECH</h1>
+    <textarea class="textto" placeholder="Enter your text here" name="mytext" id="mytext" cols="30" rows="10"></textarea>
+  </div>
+  <div class="buttons">
+    <button class="options" onclick="speak()" id="spk">Speak</button>
+    <button class="optionp" onclick="responsiveVoice.pause()">Pause</button>
+    <button class="optionr" onclick="responsiveVoice.resume()">Resume</button>
+    <select class="options" name="voice" id="voice">
+        <option class="opt" value="Female">Female</option>
+        <option class="opt" value="Male">Male</option>
+    </select>
+  </div>
+
+
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="ttp.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </img>
+        <span class="ml-3 text-xl">Text-To-Speech</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Text-To-Speech
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@hammaskhan</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500" href="https://web.facebook.com/hammaskhattak27">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.instagram.com/khattak_hammas/?fbclid=IwAR1D3ARc8Ppf7DrrbnaO12EpuSFcendsxq1zuSjdQlSCkPDV16CC-_jOYzY">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500" href="https://www.linkedin.com/in/hammas-khan-3a7095191/?fbclid=IwAR0CyQ7sLLhxVZ3V-aQIPJU6jwpFoL3yliL2Iy1Emx1AyQjF9L6YcCvmAzo">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js.js"></script>
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=VAbcp5ik"></script>
+</html>

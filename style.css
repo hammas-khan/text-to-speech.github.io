@@ -1,0 +1,68 @@
+body{
+    background: linear-gradient(to top, #d3cce3, #e9e4f0); 
+    height: 100vh;
+}
+
+.text{
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+}
+.head{
+    font-weight: bolder;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: Arial;
+    font-size: x-large;
+}
+.textto{
+    border-radius: 5px;
+    font-family: Arial;
+    padding: 10px;
+    width: 350px;
+    height: 200px;
+    overflow: auto;
+    resize: none;
+    outline: none;
+    box-shadow: 0px 0px 25px rgba(26, 25, 25, 0.37);
+}
+textarea:focus{
+    outline: none;
+}
+.buttons{
+    display: grid;
+    justify-content: center;
+}
+.options:focus{
+    background-image: linear-gradient(to bottom, #1f445e, #005a96);
+    text-decoration: none;
+    box-shadow: 0px 0px 10px rgba(26, 25, 25, 0.486);
+}
+.options, .optionp, .optionr{
+    margin-top: 20px;
+    width: 200px;
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    border-radius: 48px;
+    border-style: none;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.optionp:focus{
+    background-image: linear-gradient(to bottom, #9c3030, #b14615);
+    text-decoration: none;
+    box-shadow: 0px 0px 15px rgba(26, 25, 25, 0.342);
+}
+.optionr:focus{
+    background-image: linear-gradient(to bottom, #088f0f, #0a9935);
+    text-decoration: none;
+    box-shadow: 0px 0px 15px rgba(26, 25, 25, 0.342);
+}
+.opt{
+    font-size: normal;
+    background-color: #3498db;
+}
